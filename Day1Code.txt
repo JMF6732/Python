@@ -1,0 +1,102 @@
+Exercise 1:
+print("Day 1 - Python Print Function")
+print("The function is declared like this:")
+print("print('what to print')")
+
+ALTERNATIVE CODE:
+print("""Day 1 - Python Print Function
+The function is declared like this:
+print('what to print')""")
+
+OR
+
+print("""Day 1 - Python Print Function \nThe function is declared like this: \nprint('what to print')""")
+
+Exercise 2:
+
+#  Fix the code - below is the correct answer 
+
+print("Day 1 - String Manipulation")
+print('String Concatenation is done with the "+" sign.')
+print('e.g. print("Hello " + "world")')
+print("New lines can be created with a backslash and n.")
+
+Input Function:
+
+#   The below will ask for your name, then print out Hello NAME
+print("Hello " + input("What is your name?") + "!")
+
+Exercise 3:
+
+name = input("What is your name?")
+print(len(name))
+
+OR 
+
+print(len(input("What is your name? ")))
+
+Exercise 4
+
+# 🚨 Don't change the code below 👇
+a = input("a: ")
+b = input("b: ")
+# 🚨 Don't change the code above 👆
+
+####################################
+#Write your code below this line 👇
+a1 = b
+b = a
+a = a1
+
+
+#Write your code above this line 👆
+####################################
+
+# 🚨 Don't change the code below 👇
+print("a: " + a)
+print("b: " + b)
+
+OR
+
+# 🚨 Don't change the code below 👇
+a = input("a: ")
+b = input("b: ")
+# 🚨 Don't change the code above 👆
+
+####################################
+#Write your code below this line 👇
+c = a
+b = a
+b = c
+
+
+#Write your code above this line 👆
+####################################
+
+# 🚨 Don't change the code below 👇
+print("a: " + a)
+print("b: " + b)
+
+
+#	Band Name Generator
+
+print("Welcome to the band name generator!")
+city = input("What's the name of the city you grew up in? \n")
+pet = input("What is your pet's name? \n")
+print("Your band name could be " + city + " " + pet)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,285 @@
+# print("Welcome to the rollercoaster!")
+# height = int(input("What is your height in cm "))
+#
+# if height >= 120:
+#     print("You can ride the rollercoaster!")
+# else:
+#     print("Sorry, you are not tall enough!")
+
+# print(7 % 2)
+
+
+Exercise 1:
+# 🚨 Don't change the code below 👇
+number = int(input("Which number do you want to check? "))
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+
+if number % 2 == 0:
+    print("This is an even number.")
+else:
+    print("This is an odd number.")
+
+print("Welcome to the rollercoaster!")
+height = int(input("What is your height in cm "))
+if height >= 120:
+    print("You can ride the rollercoaster!")
+    age = int(input("Please enter your age "))
+    if age > 18:
+        print("Please pay $12")
+    elif 12 <= age <= 18:
+        print("Please pay $7")
+    else:
+        print("Please pay $5")
+else:
+    print("Sorry, you are not tall enough!")
+
+
+Exercise 2:
+
+bmi = weight / (height ** 2)
+if bmi <= 18.5:
+    interpretation = "underweight"
+elif 18.5 < bmi <= 25:
+    interpretation = "normal weight"
+elif 25 < bmi <= 30:
+    interpretation = "slightly overweight"
+elif 30 < bmi <= 35:
+    interpretation = "obese"
+else:
+    interpretation = "clically obese"
+print(f"Your BMI is {round(bmi)}, you are {interpretation}.")
+
+Exercise 3:
+
+# 🚨 Don't change the code below 👇
+year = int(input("Which year do you want to check? "))
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+
+if year % 4 != 0:
+    print("Not a leap year.")
+elif year % 4 == 0 and year % 100 == 0 and year % 400 != 0:
+    print("Not a leap year.")
+else:
+    print("Leap year.")
+
+
+
+bill = 0
+
+print("Welcome to the rollercoaster!")
+height = int(input("What is your height in cm "))
+if height >= 120:
+    print("You can ride the rollercoaster!")
+    age = int(input("Please enter your age "))
+    if age > 18:
+        bill = 12
+    elif 12 <= age <= 18:
+        bill = 7
+    else:
+        bill = 5
+    picture = input("Would you like a photo? Y or N.")
+    if picture == "Y":
+        bill += 3
+
+    print(f"your final bill is {bill}")
+
+else:
+    print("Sorry, you are not tall enough!")
+
+Exercise 4:
+# 🚨 Don't change the code below 👇
+print("Welcome to Python Pizza Deliveries!")
+size = input("What size pizza do you want? S, M, or L ")
+add_pepperoni = input("Do you want pepperoni? Y or N ")
+extra_cheese = input("Do you want extra cheese? Y or N ")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+cost = 0
+
+if size == "S":
+    cost = 15
+    if add_pepperoni == "Y":
+        cost += 2
+    if extra_cheese == "Y":
+        cost += 1
+    print(f"your final bill is {cost}.")
+elif size == "M":
+    cost = 20
+    if add_pepperoni == "Y":
+        cost += 3
+    if extra_cheese == "Y":
+        cost += 1
+    print(f"your final bill is {cost}.")
+else:
+    cost = 25
+    if add_pepperoni == "Y":
+        cost += 3
+    if extra_cheese == "Y":
+        cost += 1
+    print(f"your final bill is {cost}.")
+
+Better Code:
+
+cost = 0
+
+if size == "S":
+    cost = 15
+elif size == "M":
+    cost = 20
+else:
+    cost = 25
+if add_pepperoni == "Y" and size == "S":
+    cost += 2
+elif add_pepperoni == "Y":
+    cost += 3
+if extra_cheese == "Y":
+    cost += 1
+print(f"Your final bill is: ${cost}.")
+
+bill = 0
+
+print("Welcome to the rollercoaster!")
+height = int(input("What is your height in cm "))
+if height >= 120:
+    print("You can ride the rollercoaster!")
+    age = int(input("Please enter your age "))
+    if age > 18 and (age < 45 or age > 55):
+        bill = 12
+    elif 45 <= age <= 55:
+        bill = 0
+    elif 12 <= age <= 18:
+        bill = 7
+    else:
+        bill = 5
+    picture = input("Would you like a photo? Y or N.")
+    if picture == "Y":
+        bill += 3
+
+    print(f"your final bill is {bill}")
+
+else:
+    print("Sorry, you are not tall enough!")
+
+
+Exercise 5
+# 🚨 Don't change the code below 👇
+print("Welcome to the Love Calculator!")
+name1 = input("What is your name? \n")
+name2 = input("What is their name? \n")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+namecombo = name1.lower() + name2.lower()
+firstword = (namecombo.count("t") + namecombo.count("r") + namecombo.count("u") + namecombo.count("e"))
+secondword = namecombo.count("l") + namecombo.count("o") + namecombo.count("v") + namecombo.count("e")
+score = (str(firstword) + str(secondword))
+if int(score) < 10 or int(score) > 90:
+    print(f"Your score is {score}, you go together like coke and mentos.")
+elif 40 <= int(score) <= 50:
+    print(f"Your score is {score}, you are alright together.")
+else:
+    print(f"Your score is {score}.")
+
+
+# 🚨 Don't change the code below 👇
+print("Welcome to the Love Calculator!")
+name1 = input("What is your name? \n")
+name2 = input("What is their name? \n")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+
+namecombo = name1.lower() + name2.lower()
+firstword = (namecombo.count("t") + namecombo.count("r") + namecombo.count("u") + namecombo.count("e"))
+secondword = namecombo.count("l") + namecombo.count("o") + namecombo.count("v") + namecombo.count("e")
+score = (str(firstword) + str(secondword))
+if int(score) < 10 or int(score) > 90:
+    print(f"Your score is {score}, you go together like coke and mentos.")
+elif 40 <= int(score) <= 50:
+    print(f"Your score is {score}, you are alright together.")
+else:
+    print(f"Your score is {score}.")
+
+if choice1 == "right":
+    print("""As you make your way to the right, you notice the air becoming warmer
+          and the ground more slippery. A scurrying behind you causes you to jump
+          and you fall forward. The ground is too slippery now to get a grip
+          and you continue to tumble and the heat rises.
+          You fall into an open Lava Pit and die in torment.
+          No treasure for you, better luck next time!""")
+else:
+    print("""As you make your way to the left, you notice the air becoming a bit cooler
+    and the ground somewhat softer. Soon, in the light of your torch, 
+    you see the ground has given way to sand. You have stumbled into an underground lake.
+    The lake is vast but you see an island in the middle. You test the water
+    and notice that it is surprisingly warm. There appears to be a boat floating
+    in the lake and it appears to move toward you stand on the shore.
+    It is a long way off and will take time. You mull over the options: wait for the boat
+    or swim to the island?""")
+choice2 = print(input("What is your decision: wait or swim?"))
+if choice2 != "wait":
+    print("""It shouldn't be a tough swim, you say to yourself as you wade farther into the water.
+    Thankfully you are a strong swimmer. You begin to swim out beyond the shallow water. 
+    The water, unexpectedly continues to warm as you get farther from shore. 
+    About halfway to the island, you begin to feel faint, as the water is almost unbearably hot.
+    There is no option but to keep going, however, so you push forward. 
+    Your vision begins to fade and you cease to make forward progress.
+    As you slip beneath the surface of this underground lake, a brief flash of gold from the island
+    catches your eye, just before they submerge and you perish.
+    So close, but so far away. Better luck next time.""")
+else:
+    print("""Who knows what could be lurking below the surface of the lake?
+    It is worth the wait for the boat. There seems to be a faint gold light coming
+    from the island, so you put your torch out in the sand to save fuel.
+    As a seasoned and cautious adventurer, you better than to wait fuel.
+    After a time, the boat finally reaches the shore and you hear the hull softly
+    scrape the sand. You climb aboard and look for an oar, however, as you are bent over, 
+    the boat lurches backward into the lake, making for the island in good time.""")
+print("""You land safely on the island shore and see that the golden glow you saw
+was from a torch on the island. It is in the middle of a small half dome.
+There are three doors in the half dome, each with a key in the lock. 
+One is a faded red, the other a faded yellow, and the third, a faded blue.
+You approach each carefully for a closer look. After a careful examination,
+you notice subtle differences. The red door has a very faint picture of what looks
+like a dog, perhaps in an ancient Egyptian headdress. The yellow door had a similar symbol
+but it seemed to be the shape of a bird, again with the headdress. The blue door was of the same vein,
+with what appeared to be a crocodile with a headdress. Discovering no other differences,
+you choose a door.""")
+choice3 = print(input("After careful consideration, I will try the door colored: red, yellow, or blue?"))
+if choice3 == "red":
+    print("""You turn the key to the red door and it swings open in silence.
+    it is dark so you light your torch again. Looking forward you see stairs descending.
+    You take a few steps and the ground begins to tremble. Before you can turn around,
+    the stairs give way and you plunge into the darkness. No one hears the crash of a landing on stone
+    and no one will find your skeleton.""")
+elif choice3 == "yellow":
+    print("""You turn the key in the yellow door. It needs a push, but opens with some effort.
+    It is dark so you relight your torch and look through the doorway. It is a small room 
+    that appears to have a hallway on the left. You look to the other doors and see that
+    their keys are melting in the locks, so with no other choice you step into the room.
+    You jump as the door slams shut behind you and a loud grating noise begins. 
+    From the ground, a hidden door opens and a huge treasure chest begins to rise.
+    It's lid opens and you are dazzled by more gold and precious gems that you could have imagined. 
+    Taking what you can, and promising to return for the rest, you head down the hallway
+    which becomes a winding passage that leads you back to the cave entrance.
+    Congratulations, you have claimed the lost treasure!""")
+elif choice3 == "blue":
+    print("""You turn the key in the blue door and it opens without effort. It is pitch black inside
+    so you relight your torch. Holding it up, you see a tiny room, no larger than a shipping container,
+    with spikes on every wall. You see that this clearly will not lead to the treasure and you note
+    no fewer than 3 skulls on the floor. As you decide to try another door,
+    you become more aware of a rushing sound. You turn to see a giant wave breaking off the lake
+    and before you can move, it slams into you, pushing you into the spiked room where you are
+    impaled on the back wall. You fall forward, knowing a fourth skull will decorate this floor.""")
+else:
+    print("""You feel a trap and opt not to choose a door. As you backtrack to the boat,
+    you notice the sands begin to shift and it becomes harder to lift your feet.
+    You panic and make a dash for the boat but it is no use, 5 feet from the boat,
+    you can no longer make progress, as you sink to your waist, then chest.
+    You tip your head back for a few more seconds of life before the sand covers you.
+    It is dark, you are choking on the sand, but then it gives way to peace and your adventure ends.""")

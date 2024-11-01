@@ -1,0 +1,68 @@
+Day 2 Code
+
+# data types
+
+#string
+#print("Hello"[-1])
+
+#print("123" + "456")
+
+#integer
+
+# print(123 + 345)
+# print(123_456_789)
+
+#float
+
+# print(3.1459)
+
+#boolean - 2 values, either True or False. always captital
+
+# num_char = len(input("What is your name"))
+#
+# new_num_char = str(num_char)
+#
+# print("your name has " + new_num_char + "characters.")
+
+
+Exercise 1
+# 🚨 Don't change the code below 👇
+two_digit_number = input("Type a two digit number: ")
+# 🚨 Don't change the code above 👆
+
+####################################
+#Write your code below this line 👇
+#print(type(two_digit_number))
+
+# num1 = int(two_digit_number[0])
+# num2 = int(two_digit_number[1])
+# print(num1 + num2)
+
+
+# # 3 + 5
+# # 7 - 4
+# # 3 * 2
+# # print(6 / 3)
+# #
+# # # use ** for exponents
+# #
+# # print(2**3)
+#
+# print(3 * (3 + 3) / 3 - 3)
+
+# exercise 2
+
+# 🚨 Don't change the code below 👇
+height = input("enter your height in m: ")
+weight = input("enter your weight in kg: ")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+
+bmi = float(weight) / float(height) ** 2
+print(int(bmi))
+
+# height_1 = int(height)
+# weight_1 = int(weight)
+
+#BMI = Weight/Height**2

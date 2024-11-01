@@ -1,0 +1,108 @@
+import random
+
+random_integer = random.randint(1, 4)
+print(random_integer)
+
+random_float = random.random()
+print(random_float)
+
+print(random_float + random_integer)
+
+Heads or Tails Generator:
+
+Exercise 1:
+#Remember to use the random module
+#Hint: Remember to import the random module here at the top of the file. 🎲
+
+#Write the rest of your code below this line 👇
+import random
+rndint = random.randint(0,1)
+if rndint == 1:
+    print("Heads")
+else:
+    print("Tails")
+
+# states_of_america = ["Delaware", "Pennsylvania", "etc."]
+#
+# states_of_america.append("Flatland")
+# print(states_of_america)
+
+# Exercise 2: Banker Roulette
+
+import random
+# Import the random module here
+
+# Split string method
+names_string = input("Give me everybody's names, separated by a comma. ")
+names = names_string.split(", ")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+noofnames = len(names) - 1
+payer = random.randint(0, noofnames)
+print(f"{names[payer]} will buy the meal today!")
+
+fruits = ["Strawberries", "Nectarines", "Apples", "Grapes", "Peaches", "Cherries", "Pears"]
+vegetables = ["Spinach", "Kale", "Tomatoes", "Celery", "Potatoes"]
+
+dirty_dozen = [fruits, vegetables]
+print(dirty_dozen)
+print(dirty_dozen[0])
+print(dirty_dozen[1])
+
+Exercise 3: Treasure Map
+
+# This was challenging for me
+
+# 🚨 Don't change the code below 👇
+row1 = ["⬜️","️⬜️","️⬜️"]
+row2 = ["⬜️","⬜️","️⬜️"]
+row3 = ["⬜️️","⬜️️","⬜️️"]
+map = [row1, row2, row3]
+print(f"{row1}\n{row2}\n{row3}")
+position = input("Where do you want to put the treasure? ")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this row 👇
+coord_column = int(position[0])
+coord_row = int(position[1])
+map[coord_row - 1][coord_column - 1] = 'X'
+
+
+
+
+#Write your code above this row 👆
+
+# 🚨 Don't change the code below 👇
+print(f"{row1}\n{row2}\n{row3}")
+
+
+Day 4 project: Rock Paper Scissors:
+
+import random
+game = [rock, paper, scissors]
+yourselection = int(input("Type 0 for Rock, 1 for Paper, or 2 for Scissors\n"))
+compselection = random.randint(0, 2)
+if yourselection >=3:
+    print("You typed an invalid character, you lose")
+else:
+    print(game[yourselection])
+    print(f"Computer chose:\n{game[compselection]}")
+    if yourselection == compselection:
+        print("It's a draw")
+    else:
+        if yourselection == 0:
+            if compselection == 1:
+                print("You lose")
+            else:
+                print("You win")
+        elif yourselection == 1:
+            if compselection == 2:
+                print("You lose")
+            else:
+                print("You win")
+        else:
+            if compselection == 0:
+                print("You lose")
+            else:
+                print("You win")
