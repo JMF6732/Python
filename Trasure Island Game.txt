@@ -1,0 +1,114 @@
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.")
+
+#https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Treasure%20Island%20Conditional.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oDe4ehjWZipYRsVfeAx2HyB7LCQ8_Fvi%26export%3Ddownload
+
+#Write your code below this line 👇
+
+print("""You enter a cave, hidden behind a waterfall. 
+As you make your way deeper, the light fades.
+luckily, you have a torch and light it.
+At the end of the cave entrance, there are two paths, 
+one to the left and one to the right.
+Which do you choose?""")
+choice1 = input("choose your path: left or right?").lower()
+if choice1 == "left":
+    print("""As you make your way to the left, you notice the air becoming a bit cooler
+    and the ground somewhat softer. Soon, in the light of your torch, 
+    you see the ground has given way to sand. You have stumbled into an underground lake.
+    The lake is vast but you see an island in the middle. You test the water
+    and notice that it is surprisingly warm. There appears to be a boat floating
+    in the lake and it appears to move toward you stand on the shore.
+    It is a long way off and will take time. You mull over the options: wait for the boat
+    or swim to the island?""")
+    choice2 = input("What is your decision: wait or swim?").lower()
+    if choice2 != "wait":
+        print("""It shouldn't be a tough swim, you say to yourself as you wade farther into the water.
+        Thankfully you are a strong swimmer. You begin to swim out beyond the shallow water. 
+        The water, unexpectedly continues to warm as you get farther from shore. 
+        About halfway to the island, you begin to feel faint, as the water is almost unbearably hot.
+        There is no option but to keep going, however, so you push forward. 
+        Your vision begins to fade and you cease to make forward progress.
+        As you slip beneath the surface of this underground lake, a brief flash of gold from the island
+        catches your eye, just before they submerge and you perish.
+        So close, but so far away. Better luck next time.""")
+    else:
+        print("""Who knows what could be lurking below the surface of the lake?
+        It is worth the wait for the boat. There seems to be a faint gold light coming
+        from the island, so you put your torch out in the sand to save fuel.
+        As a seasoned and cautious adventurer, you know better than to waste fuel.
+        After a time, the boat finally reaches the shore and you hear the hull softly
+        scrape the sand. You climb aboard and look for an oar, however, as you are bent over, 
+        the boat lurches backward into the lake, making for the island in good time.""")
+        print("""You land safely on the island shore and see that the golden glow you saw
+        was from a torch on the island. It is in the middle of a small half dome.
+        There are three doors in the half dome, each with a key in the lock. 
+        One is a faded red, the other a faded yellow, and the third, a faded blue.
+        You approach each carefully for a closer look. After a careful examination,
+        you notice subtle differences. The red door has a very faint picture of what looks
+        like a dog, perhaps in an ancient Egyptian headdress. The yellow door had a similar symbol
+        but it seemed to be the shape of a bird, again with the headdress. The blue door was of the same vein,
+        with what appeared to be a crocodile with a headdress. Discovering no other differences,
+        you choose a door.""")
+        choice3 = input("After careful consideration, I will try the door colored: red, yellow, or blue?").lower()
+        if choice3 == "red":
+            print("""You turn the key to the red door and it swings open in silence.
+            it is dark so you light your torch again. Looking forward you see stairs descending.
+            You take a few steps and the ground begins to tremble. Before you can turn around,
+            the stairs give way and you plunge into the darkness. No one hears the crash of a landing on stone
+            and no one will find your skeleton.""")
+        elif choice3 == "yellow":
+            print("""You turn the key in the yellow door. It needs a push, but opens with some effort.
+            It is dark so you relight your torch and look through the doorway. It is a small room 
+            that appears to have a hallway on the left. You look to the other doors and see that
+            their keys are melting in the locks, so with no other choice you step into the room.
+            You jump as the door slams shut behind you and a loud grating noise begins. 
+            From the ground, a hidden door opens and a huge treasure chest begins to rise.
+            It's lid opens and you are dazzled by more gold and precious gems that you could have imagined. 
+            Taking what you can, and promising to return for the rest, you head down the hallway
+            which becomes a winding passage that leads you back to the cave entrance.
+            Congratulations, you have claimed the lost treasure!""")
+        elif choice3 == "blue":
+            print("""You turn the key in the blue door and it opens without effort. It is pitch black inside
+            so you relight your torch. Holding it up, you see a tiny room, no larger than a shipping container,
+            with spikes on every wall. You see that this clearly will not lead to the treasure and you note
+            no fewer than 3 skulls on the floor. As you decide to try another door,
+            you become more aware of a rushing sound. You turn to see a giant wave breaking off the lake
+            and before you can move, it slams into you, pushing you into the spiked room where you are
+            impaled on the back wall. You fall forward, knowing a fourth skull will decorate this floor.""")
+        else:
+            print("""You feel a trap and opt not to choose a door. As you backtrack to the boat,
+            you notice the sands begin to shift and it becomes harder to lift your feet.
+            You panic and make a dash for the boat but it is no use, 5 feet from the boat,
+            you can no longer make progress, as you sink to your waist, then chest.
+            You tip your head back for a few more seconds of life before the sand covers you.
+            It is dark, you are choking on the sand, but then it gives way to peace and your adventure ends.""")
+else:
+    print("""As you make your way to the right, you notice the air becoming warmer
+    and the ground more slippery. A scurrying behind you causes you to jump
+    and you fall forward. The ground is too slippery now to get a grip
+    and you continue to tumble and the heat rises.
+    You fall into an open Lava Pit and die in torment.
+    No treasure for you, better luck next time!""")
