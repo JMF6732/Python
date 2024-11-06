@@ -1,0 +1,31 @@
+import art
+print(art.logo)
+
+final_bids = {}
+highest_bid = {}
+next_bid = True
+
+while next_bid:
+    name = input("What is your name?\n")
+    bid = int(input("What is your bid? \n"))
+    final_bids[name] = bid
+    more_bids = input("Does anyone else want to bid? Type 'Yes' or 'No.'\n").lower()
+
+    print("\n" * 100)
+
+    if more_bids == "no":
+        next_bid = False
+
+#print(final_bids)
+
+current_highest = 0
+
+for key in final_bids:
+    if final_bids[key] >= current_highest:
+        current_highest = final_bids[key]
+        highest_bid = {}
+        highest_bid[key] = current_highest
+    else:
+        highest_bid[key] = highest_bid[key]
+
+print(f"The winner is {key}, with a bid of ${highest_bid[key]}")
